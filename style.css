@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #020024, #090979, #00d4ff);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background: gold;
+  color: black;
+  margin-top: 20px;
+}
+
+.firework {
+  width: 80%;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.5); }
+}
